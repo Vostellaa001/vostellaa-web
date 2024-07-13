@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>body {background: grey;
+        font-family:Arial, Helvetica, sans-serif Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: grey;
+    }
+    
+    header, footer, nav, main {
+        padding: 20px;
+        background-color: #f1f505;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        margin: 0;
+        color: #333333;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333333;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    footer {
+        text-align: center;
+        color: #666666;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+    
+    form {
+        margin-top: 10px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333333;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style></head>
+<body>
+    <header>
+        <h1>young lunar</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home page of my website.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn about who we are and what we do.
+                Hey! Am vostellaa onash. coding has changed my world.Its 
+                not just about apps. learning to code gave me
+                problem solving skills and away to communicate with othes on a
+                technical level.i can also develop websitesand use my codind skills
+                to generate a good working platform.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact us using the form below.</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
