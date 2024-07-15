@@ -1,137 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>body {background: grey;
-        font-family:Arial, Helvetica, sans-serif Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: grey;
-    }
-    
-    header, footer, nav, main {
-        padding: 20px;
-        background-color: #f1f505;
-        margin: 10px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    header h1 {
-        margin: 0;
-        color: #333333;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #333333;
-    }
-    
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
-    
-    footer {
-        text-align: center;
-        color: #666666;
-        font-size: 0.8em;
-        margin-top: 20px;
-    }
-    
-    section {
-        margin-bottom: 20px;
-    }
-    
-    form {
-        margin-top: 10px;
-    }
-    
-    form label {
-        display: block;
-        margin-bottom: 5px;
-        color: #333333;
-    }
-    
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    
-    form input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    form input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-    </style></head>
-<body>
-    <header>
-        <h1>young lunar</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Young Lunar || Home</title>
+    <!-- font-awesome reference -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "de0cd5c1-d981-4336-9880-299fd99db7aa",
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
+  </head>
+  <link rel="icon" href="./images/tech_point_logo.png" />
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="spinner-wrapper">
+  <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+  </div>
+</div> -->
+    <!-- end of preloader -->
+
+    <!-- Header -->
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo.png" class="nav-logo" alt="" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
         </ul>
+      </div>
     </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home page of my website.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>Learn about who we are and what we do.
-                Hey! Am vostellaa onash. coding has changed my world.Its 
-                not just about apps. learning to code gave me
-                problem solving skills and away to communicate with othes on a
-                technical level.i can also develop websitesand use my codind skills
-                to generate a good working platform.
-            </p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Contact us using the form below.</p>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="http://instagram.com/lunar_ke.1" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/@steveonash432" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/Young Lunar"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/vostellaa001" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@Vostellaaonash" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm Lunar</h1>
+          <h3>I am <span class="typing"></span></h3>
+          <a href="contact.html" class="btn hero-btn">hire me</a>
+          <!-- social icons -->
+          <ul class="social-icons">
+            <li>
+              <a href="http://instagram.com/lunar_ke.1" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/@steveonash432" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/Young Lunar"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/vostellaa001" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@Vostellaaonash"
+                class="social-icon"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="hero-img">
+          <img
+            src="./images/hero-img.jpg"
+            class="hero-photo"
+            alt="Young Lunar"
+          />
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+          <img
+            src="./images/about-img.jpg"
+            class="hero-photo"
+            alt="about img"
+          />
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>about</h2>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title -->
+          <p>
+            Hey! Am Young Lunar.Coding has changed my world.Its not just about
+            apps. Learning to Code gave me problem-solving skills amd a way to
+            communicate with others on a technical level. I can also develop
+            websites and use my coding skills to get a better Job.
+          </p>
+          <p></p>
+          <a href="about.html" class="btn">more about me</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+    <!-- services -->
+    <section class="section bg-grey">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>services</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="services-center section-center">
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-android service-icon"></i>
+          <h4>App development</h4>
+          <div class="underline"></div>
+          <p>
+            I got into Android App Development because I wanted to know how
+            applications created and this opened up a new world of opportunities
+            for me.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fas fa-code service-icon"></i>
+          <h4>web Development</h4>
+          <div class="underline"></div>
+          <p>Web Development is very awesome.</p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-sketch service-icon"></i>
+          <h4>Web design</h4>
+          <div class="underline"></div>
+          <p>
+            Web design is very awesome.Imagine all your imaginations in a
+            website form!
+          </p>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- projects -->
+    <section class="section projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>latest works</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          I have been working on a number of projects both in app development
+          and web development. Below I show you some of my latest work since I
+          got into Software Development.
+        </p>
+      </div>
+      <!--end of section title -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <a href="projects.html" class="project-1">
+          <article class="project">
+            <img
+              src="./images/project-1.png"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>WhatsApp Clone</h4>
+              <p>Young Lunar</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a href="projects.html" class="project-2">
+          <article class="project">
+            <img
+              src="./images/project-2.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>project title</h4>
+              <p>client name</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-3">
+          <article class="project">
+            <img
+              src="./images/voice_recorder.png"
+              alt="voice Recorder"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Material Design Voice Recorder</h4>
+              <p>Young Lunar</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-4">
+          <article class="project">
+            <img
+              src="./images/project-4.jpg"
+              alt="instagram clone"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Instagram Clone</h4>
+              <p>Young Lunar</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+      </div>
+    </section>
+    <!-- end of projects -->
+    <!-- connect -->
+    <section class="connect">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./images/project-1.jpeg"
+      >
+        <source src="./videos/connect.mp4" type="video/mp4" />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>let's get in touch</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p class="video-text">
+          If you want to ask me anything on either Android Development or Web
+          Development you can feel free to cantact me by just pressing the
+          button below even if you want to ask for some advice you can also feel
+          free to contact me.
+        </p>
+        <a href="contact.html" class="btn">contact me</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+    <!-- skills -->
+    <section class="section skills">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>skills</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center skills-center">
+        <article>
+          <h3>front end web development</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>HTML</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">80%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>CSS</p>
+            <div class="skill-container">
+              <div class="skill-value value-60"></div>
+              <p class="skill-text skill-text-60">60%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="skill-container">
+              <div class="skill-value value-50"></div>
+              <p class="skill-text skill-text-50">50%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          <h3>Android Development</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>Java</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">80%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Kotlin</p>
+            <div class="skill-container">
+              <div class="skill-value value-50"></div>
+              <p class="skill-text skill-text-50">50%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          <h3>Cross Platform App Development</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>Flutter</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">70%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>React Native</p>
+            <div class="skill-container">
+              <div class="skill-value value-30"></div>
+              <p class="skill-text skill-text-30">30%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          <h3>Game Development</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>Unity Game Engine</p>
+            <div class="skill-container">
+              <div class="skill-value value-50"></div>
+              <p class="skill-text skill-text-50">50%</p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+      </div>
+    </section>
+    <!-- end of skills -->
+    <!-- timeline -->
+    <section class="section timeline">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Journey In Tech</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center timeline-center">
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>200</h4>
+          <p>Born to a wonderful woman by the name Emmy.</p>
+          <span class="number"> 1 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2019</h4>
+          <p> Got into Highschool where I got the chance to discover myself by trying
+            different new things.From drama to music to Tech.</p>
+          <span class="number"> 2 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2020</h4>
+          <p></p>
+          <span class="number"> 3 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2021</h4>
+          <p></p>
+          <span class="number"> 4 </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2022</h4>
+          <p></p>
+          <span class="number"> 5 </span>
+        </article>
+        <!-- end of  single timeline item -->
+      </div>
+    </section>
+    <!--end of  timeline -->
+    <!-- blog -->
+    <section class="section blog">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Books</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center blog-center">
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/how-to-win-friends.png" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/ego_is_the_enemy.png" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/subtle_art_of_not_giving_a_fuck.jpeg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/the_alchemist.jpg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/rich_dad_poor_dad.jpg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/will.jpeg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/richest_man_in_babylon.jpeg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/the_art_of_war.jpeg" alt="" />
+            <div class="card-info"></div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+      </div>
+    </section>
+    <!--end of  blog -->
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="http://instagram.com/lunar_ke.1" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/@steveonash432" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/Young Lunar"
+            class="social-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/vostellaa001 " class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/@Vostellaaonash"
+            class="social-icon"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>&copy; <span id="date"></span> Younglunar.KE . all rights reserved</p>
     </footer>
-    <script src="script.js"></script>
-</body>
+
+    <script src="./js/app.js"></script>
+    <script src="typed.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: ["an Android Developer.", "a Web Developer.", "a Youtuber."],
+        loop: true,
+        typeSpeed: 30,
+        backSpeed: 3,
+        backDelay: 1000,
+      });
+    </script>
+
+    <script>
+      setTimeout(function () {
+        $(".spinner-wrapper").fadeToggle();
+      }, 1500);
+    </script>
+  </body>
 </html>
